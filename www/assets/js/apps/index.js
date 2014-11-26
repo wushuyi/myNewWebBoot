@@ -46,7 +46,7 @@ define(function (require) {
     domReady(function () {
         console.log(book);
         ajax.getData({
-            apiURL: 'http://localhost/myNewWebBoot/',
+            apiURL: location.href,
             successCallback: function (data) {
                 console.log('ajaxTest ok!');
             }
